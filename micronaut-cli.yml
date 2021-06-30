@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.msgilligan.micronaut.acme
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [acme, annotation-api, app-name, github-workflow-docker-registry, github-workflow-graal-docker-registry, graalvm, gradle, http-client, java, java-application, logback, netty-server, readme, shade, spock, yaml]

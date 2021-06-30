@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: sample
+  server:
+    ssl:
+      enabled: 'true'
+acme:
+  enabled: 'false'
+  tos-agree: 'true'
+  cert-location: /etc/mnconfig
+  domains:
+    - nonexistant.msgilligan.com
+  domain-key: /etc/mnconfig/domain-key.pem
+  account-key: /etc/mnconfig/account-key.pem
+  acme-server: acme://letsencrypt.org/staging
