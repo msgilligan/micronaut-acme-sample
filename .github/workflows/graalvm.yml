@@ -25,9 +25,9 @@ jobs:
 #          registry: ${{ secrets.DOCKER_REGISTRY_URL }}
 #          username: ${{ secrets.DOCKER_USERNAME }}
 #          password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Build Docker Image
+      - name: Gradle Native Build
         env:
 #          DOCKER_REPOSITORY_PATH: ${{ secrets.DOCKER_REPOSITORY_PATH }}
 #          DOCKER_REGISTRY_URL: ${{ secrets.DOCKER_REGISTRY_URL }}
           TESTCONTAINERS_RYUK_DISABLED: true
-        run: ./gradlew check dockerBuildNative --no-daemon
+        run: ./gradlew build nativeImage dockerBuildNative --no-daemon
